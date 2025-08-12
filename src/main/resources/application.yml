@@ -2,8 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/banking_db
     username: banking_user
-      POSTGRES_PASSWORD: banking_pass
-    password: 
+    password: banking_pass
   jpa:
     hibernate:
       ddl-auto: update
