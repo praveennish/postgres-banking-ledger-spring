@@ -1,4 +1,7 @@
 package com.example.bankingledger.repository;
 
-public class AccountRepository {
+import com.example.bankingledger.model.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AccountRepository extends JpaRepository<Account, Long> {
 }

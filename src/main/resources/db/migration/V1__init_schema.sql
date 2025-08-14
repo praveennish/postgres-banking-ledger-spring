@@ -18,3 +18,8 @@ CREATE TABLE transactions (
     txn_type VARCHAR(20) CHECK( txn_type IN ('DEPOSIT', 'WITHDRAWAL', 'TRANSFER')),
     txn_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )
+
+-- sample seed
+INSERT INTO customers (name, email) VALUES ('Alice Johnson', 'alice@example.com'), ('Bob Smith', 'bob@example.com');
+INSERT INTO accounts (customer_id, account_type, balance) VALUES (1, 'SAVINGS', 5000.00), (1, 'CHECKING', 1500.00), (2, 'SAVINGS', 8000.00);
+INSERT INTO transactions (account_id, amount, txn_type, description) VALUES (1, 1000.00, 'DEPOSIT', 'Salary Credit'), (1, 200.00, 'WITHDRAWAL', 'ATM Withdrawal'), (3, 500.00, 'DEPOSIT', 'Interest Payout');

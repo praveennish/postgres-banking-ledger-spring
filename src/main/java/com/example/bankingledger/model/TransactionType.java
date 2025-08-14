@@ -1,4 +1,8 @@
 package com.example.bankingledger.model;
 
-public class TransactionType {
+public enum TransactionType
+{
+    DEPOSIT,
+    WITHDRAWAL,
+    TRANSFER
 }
