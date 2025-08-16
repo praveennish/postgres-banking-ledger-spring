@@ -1,4 +1,4 @@
 Build instruction
 
-docker compose up build
-mvn clean package
+1. docker compose up build
+2. mvn clean package
