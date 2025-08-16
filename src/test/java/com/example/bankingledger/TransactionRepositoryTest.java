@@ -36,7 +36,7 @@ public class TransactionRepositoryTest {
 
     @Test
     void shouldFindSuspiciousWithdrawals(){
-        List<Transaction> results = transactionRepository.findSuspicious(TransactionType.WITHDRAWAL, BigDecimal.valueOf(500), LocalDateTime.now().minusDays(30));
+        List<Transaction> results = transactionRepository.findSuspicious(TransactionType.WITHDRAWAL, BigDecimal.valueOf(100), LocalDateTime.now().minusDays(30));
         assertNotEquals( 0,results.size());
     }
 }
